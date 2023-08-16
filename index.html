@@ -13,13 +13,18 @@
 
     <style>
         .paragraph{
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
             text-align: justify;
             text-justify: inter-word;
         }
         p{
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;  
         }
+        @media (max-width: 767px) {
+            p{
+              font-size:16px; /* Adjust font size for mobile devices */
+            }
+          }
         body {
             background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
         }
@@ -53,18 +58,9 @@
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.644);
         }
-
-        .img-thumbnail {
-            width:100%;
-            height: 500px;
-            object-fit: cover;
-            border-radius:5px;
-            border:none;
-        }
-      
         .icons {
             width: 100%;
-            height: 20vh;
+            height:10vh;
             object-fit: contain;
             filter: drop-shadow(5px 8px 1px black);
         }
@@ -108,19 +104,12 @@
             border:2px solid black;
             box-shadow:8px 5px 2px gray;
         }
-
-        .icons-card:hover {
-            transform: scale(1.1);
-        }
-
-        .icons-card {
-            transition: transform 0.5s;
-        }
         .dwicon{
             width:30px;
             height:30px;
             object-fit: contain;
         }
+       
     </style>
 </head>
 
@@ -153,20 +142,15 @@
 
     <!-- Header block -->
     <div class="container-fluid">
-        <div class="header">
+        <div class="header pb-4">
             <div class="row g-3">
-                <div class="col-md-6">
-                    <img src="mypic.jpg" class="img-thumbnail m-md-5 p-0" alt="...">
-                </div>
-                <div class="col-md-6 p-3">
+                <div class="col-md-12">
                     <div class="m-md-5">
                         <h1 class="heading" align="center">SUMIT SONI</h1>
-                        <p class="paragraph p-2">Hello there! I'm Sumit, from Bhopal(madhya pradesh). Currently, I am
-                            passionately pursuing my Master of Technology degree.
-                            I am a fresher, eager to embark on a journey of exploration and innovation in the dynamic
-                            world of technology.
-                            my goal is to work in learning and challenging environment, utilizing my skill and knowledge
-                            to be the best of my abilities
+                        <p class="paragraph p-2">
+                            Hello there! I'm Sumit,from Bhopal(Madhya Pradesh).Currently,I am passionately pursuing my Master of Technology degree.
+                            I am a fresher, eager to embark on a journey of exploration and innovation in the dynamic world of technology.
+                            My goal is to work in learning and challenging environment, utilizing my skill and knowledge to be the best of my abilities
                             and contribute positively to my personal growth as well as growth of the organization.
                         </p>
                         <a class="btn btn-dark w-100 mb-3" href="resume.pdf" role="button" download>
@@ -179,33 +163,31 @@
 
     <!--section one-->
     <div class="container-fluid">
-        <div class="section-1">
+        <div class="section-1 pb-4">
             <div class="row g-3">
-                <div class="col-md-12 p-3">
+                <div class="col-md-12">
                     <div class="m-md-5">
                         <h1 class="heading" align="center">SKILLS</h1>
-                        <p class="paragraph p-2">Welcome to my web portfolio!
-                            I am excited to showcase my skills and knowledge. Proficient in HTML and CSS, I craft
-                            engaging and visually appealing web designs.
-                            My expertise extends to Python, allowing me to create dynamic and interactive web
-                            experiences.
-                            Leveraging my understanding of Machine Learning, I am capable of integrating intelligent
-                            functionalities into projects, adding a layer of innovation.
-                            With a solid grasp of SQL, I can ensure efficient data management and retrieval.
-                            Additionally, my utilization of Bootstrap enhances the responsiveness and user-friendliness
-                            of my creations.
-                            Explore my portfolio to witness my journey as a versatile and driven developer, constantly
-                            seeking opportunities to learn and grow.</p>
+                        <p class="paragraph p-2">
+                            Welcome to my web portfolio!
+                            I am excited to showcase my skills and knowledge. Proficient in HTML and CSS,
+                            I craft engaging and visually appealing web designs.
+                            My expertise extends to Python, allowing me to create dynamic and interactive web experiences.
+                            Leveraging my understanding of Machine Learning, I am capable of integrating intelligent functionalities into projects,
+                            adding a layer of innovation.With a solid grasp of SQL, I can ensure efficient data management and retrieval.
+                            Additionally, my utilization of Bootstrap enhances the responsiveness and user-friendlinessof my creations.
+                            Explore my portfolio to witness my journey as a versatile and driven developer, constantly seeking opportunities to learn and grow.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-12 mt-1">
                 <div class="container-fluid p-4">
-                    <div class="row row-cols-1 row-cols-md-4 g-3 p-4">
+                    <div class="row row-cols-2 row-cols-md-4 g-2">
                         <div class="col-md">
                           <div class="card icons-card">
                             <img src="html.png" class="icons" alt="...">
                             <div class="card-body p-2">
-                              <h5 class="card-title text-center">HTML</h5>
+                              <h6 class="card-title text-center">HTML</h6>
                             </div>
                           </div>
                         </div>
@@ -213,7 +195,7 @@
                           <div class="card icons-card">
                             <img src="css.png" class="icons" alt="...">
                             <div class="card-body p-2">
-                              <h5 class="card-title text-center">CSS</h5>
+                              <h6 class="card-title text-center">CSS</h6>
                             </div>
                           </div>
                         </div>
@@ -221,7 +203,7 @@
                           <div class="card icons-card">
                             <img src="bootstrap.png" class="icons" alt="...">
                             <div class="card-body p-2">
-                              <h5 class="card-title text-center">Bootstrap</h5>
+                              <h6 class="card-title text-center">Bootstrap</h6>
                             </div>
                           </div>
                         </div>
@@ -229,7 +211,7 @@
                           <div class="card icons-card">
                             <img src="cprogramming.png" class="icons" alt="...">
                             <div class="card-body p-2">
-                              <h5 class="card-title text-center">C programming</h5>
+                              <h6 class="card-title text-center">C programming</h6>
                             </div>
                           </div>
                         </div>
@@ -237,7 +219,7 @@
                             <div class="card icons-card">
                             <img src="corejava.png" class="icons" alt="...">
                               <div class="card-body p-2">
-                                <h5 class="card-title text-center">Core Java</h5>
+                                <h6 class="card-title text-center">Core Java</h6>
                               </div>
                             </div>
                         </div>
@@ -245,7 +227,7 @@
                             <div class="card icons-card">
                             <img src="python.png" class="icons" alt="...">
                               <div class="card-body p-2">
-                                <h5 class="card-title text-center">Python</h5>
+                                <h6 class="card-title text-center">Python</h6>
                               </div>
                             </div>
                         </div>
@@ -253,7 +235,7 @@
                             <div class="card icons-card">
                                 <img src="ML.png" class="icons" alt="...">
                               <div class="card-body p-2">
-                                <h5 class="card-title text-center">Machine Learning</h5>
+                                <h6 class="card-title text-center">Machine Learning</h6>
                               </div>
                             </div>
                         </div>
@@ -261,7 +243,7 @@
                             <div class="card icons-card">
                                 <img src="sql.png" class="icons" alt="...">
                               <div class="card-body p-2">
-                                <h5 class="card-title text-center">SQL Database</h5>
+                                <h6 class="card-title text-center">SQL Database</h6>
                               </div>
                             </div>
                         </div>
