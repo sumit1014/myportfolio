@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,14 +15,20 @@
             font-family: Georgia, 'Times New Roman', Times, serif; 
             text-align: justify;
             text-justify: inter-word;
+           
         }
         p{
-            font-family: Georgia, 'Times New Roman', Times, serif;  
-            font-size : 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            font-size:15px; 
         }
         @media (max-width: 767px) {
             p{
               font-size:14px; /* Adjust font size for mobile devices */
+              white-space: normal;
+              word-spacing: normal;
+            }
+            .icon-title{
+                font-size: 12px;
             }
           }
         body {
@@ -63,9 +68,10 @@
             width: 100%;
             height:10vh;
             object-fit: contain;
-            filter: drop-shadow(5px 8px 1px black);
+            filter: drop-shadow(5px 8px 1px rgba(0, 0, 0, 0.582));
+            margin-bottom:10px;
         }
-
+        
         .heading {
             font-weight: bold;
             text-shadow: 3px 3px 10px rgba(0, 102, 255, 0.87);
@@ -99,12 +105,7 @@
             background-color: rgba(240, 248, 255, 0.24);
             border-radius: 5px;
         }
-        .icons-card {
-            background-color: rgba(240, 248, 255, 0);
-            border-radius: 10px;
-            border:2px solid black;
-            box-shadow:5px 5px 5px gray;
-        }
+        
         .dwicon{
             width:30px;
             height:30px;
@@ -134,7 +135,7 @@
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="aboutme.html">About us</a>
                     </li>
                 </ul>
             </div>
@@ -149,7 +150,7 @@
                     <div class="m-md-5">
                         <h1 class="heading" align="center">SUMIT SONI</h1>
                         <p class="paragraph p-2">
-                            Hello there! I'm Sumit, from Bhopal(Madhya Pradesh).Currently, I am passionately pursuing my Master of Technology degree.
+                            Hello there! I'm Sumit, from Bhopal(Madhya Pradesh).Currently,I am passionately pursuing my Master of Technology degree.
                             I am a fresher, eager to embark on a journey of exploration and innovation in the dynamic world of technology.
                             My goal is to work in learning and challenging environment, utilizing my skill and knowledge to be the best of my abilities
                             and contribute positively to my personal growth as well as growth of the organization.
@@ -182,71 +183,39 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-1">
-                <div class="container-fluid p-4">
-                    <div class="row row-cols-2 row-cols-md-4 g-2">
+                <div class="container-fluid">
+                    <div class="row row-cols-4 row-cols-md-4 g-2 m-3">
                         <div class="col-md">
-                          <div class="card icons-card">
                             <img src="html.png" class="icons" alt="...">
-                            <div class="card-body p-2">
-                              <h6 class="card-title text-center">HTML</h6>
-                            </div>
-                          </div>
+                            <h6 class="icon-title" align="center">HTML</h6>
                         </div>
                         <div class="col-md">
-                          <div class="card icons-card">
                             <img src="css.png" class="icons" alt="...">
-                            <div class="card-body p-2">
-                              <h6 class="card-title text-center">CSS</h6>
-                            </div>
-                          </div>
+                            <h6 class="icon-title" align="center">CSS</h6>
                         </div>
                         <div class="col-md">
-                          <div class="card icons-card">
                             <img src="bootstrap.png" class="icons" alt="...">
-                            <div class="card-body p-2">
-                              <h6 class="card-title text-center">Bootstrap</h6>
-                            </div>
-                          </div>
+                            <h6 class="icon-title" align="center">Bootstrap</h6>
                         </div>
                         <div class="col-md">
-                          <div class="card icons-card">
                             <img src="cprogramming.png" class="icons" alt="...">
-                            <div class="card-body p-2">
-                              <h6 class="card-title text-center">C programming</h6>
-                            </div>
-                          </div>
+                            <h6 class="icon-title" align="center">C Programming</h6>
                         </div>
                         <div class="col-md">
-                            <div class="card icons-card">
                             <img src="corejava.png" class="icons" alt="...">
-                              <div class="card-body p-2">
-                                <h6 class="card-title text-center">Core Java</h6>
-                              </div>
-                            </div>
+                            <h6 class="icon-title" align="center">Core Java</h6>
                         </div>
                         <div class="col-md">
-                            <div class="card icons-card">
                             <img src="python.png" class="icons" alt="...">
-                              <div class="card-body p-2">
-                                <h6 class="card-title text-center">Python</h6>
-                              </div>
-                            </div>
+                            <h6 class="icon-title" align="center">Python</h6>
                         </div>
                         <div class="col-md">
-                            <div class="card icons-card">
-                                <img src="ML.png" class="icons" alt="...">
-                              <div class="card-body p-2">
-                                <h6 class="card-title text-center">Machine Learning</h6>
-                              </div>
-                            </div>
+                            <img src="ML.png" class="icons" alt="...">
+                            <h6 class="icon-title" align="center">Machine Lrearning</h6>
                         </div>
                         <div class="col-md">
-                            <div class="card icons-card">
-                                <img src="sql.png" class="icons" alt="...">
-                              <div class="card-body p-2">
-                                <h6 class="card-title text-center">SQL Database</h6>
-                              </div>
-                            </div>
+                            <img src="sql.png" class="icons" alt="...">
+                            <h6 class="icon-title" align="center">SQL</h6>
                         </div>
                     </div>
                 </div>
@@ -317,7 +286,7 @@
     <div class="container-fluid">
         <div class="footer">
             <div class="row g-2 mt-2 mb-2 p-3">
-               <div class="col-md-3">
+                <div class="col-md-3">
                     <img src="linkedin.png" class="footer-icons mx-2" alt="..."><a href="https://www.linkedin.com/in/sumit-soni-4467aa187" target="_blank" class="link p-0">LinkedIn</a>
                 </div>
                 <div class="col-md-3">
@@ -327,10 +296,18 @@
                     <img src="git.png" class="footer-icons mx-2" alt="..."><a href="https://github.com/sumit1014" class="link p-0">Github</a>
                 </div>
                 <div class="col-md-3">
-                    <img src="call.png" class="footer-icons mx-2" alt="..."><a href="#" class="link p-0">+91-8085911694</a>
+                    <img src="call.png" class="footer-icons mx-2" alt="..."><a href="#" class="link p-0" disabled>+91-8085911694</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+                    
+                   
+                   
+                   
+                   
+                  
+                   
