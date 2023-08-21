@@ -35,14 +35,26 @@
             background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
         }
         .nav-link {
-            color:black;
-            font-weight: bold;
-            font-size: 25px;
+            color:rgb(51, 50, 50);
+            font-weight: bold; 
         }
 
         .nav-link:hover {
             color: rgba(0, 102, 255, 0.87);
             text-shadow: 5px 5px 5px rgba(255, 252, 88, 0.836);
+        }
+        
+        .navbar-brand{
+            color:rgb(51, 50, 50);
+            font-weight: bold;
+            
+        }
+        .round-pic{
+            width:30px;
+            height:30px;
+            object-fit:cover;
+            padding:0px;
+            box-shadow: 1px 0px 5px rgb(84, 255, 127)
         }
        
         .header {
@@ -74,7 +86,7 @@
         
         .heading {
             font-weight: bold;
-            text-shadow: 3px 3px 5px rgba(0, 102, 255, 0.87);
+            text-shadow: 2px 3px 1px rgba(153, 153, 153, 0.534);
             color: black;  
         }
 
@@ -153,12 +165,13 @@
     <!-- nav bar -->
     <div class="container-fluid mb-3">
         <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <a class="navbar-brand"><img src="userprofile.png" class="img-thumbnail float-start round-pic m-1 mx-2 rounded-circle" alt="...">Sumit Kumar soni</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -182,7 +195,7 @@
             <div class="row g-3">
                 <div class="col-md-12">
                     <div class="m-md-5">
-                        <h1 class="heading" align="center">SUMIT SONI</h1>
+                        <h2 class="heading" align="center">INTRODUCTION</h2>
                         <p class="paragraph p-2">
                             Hello there! I'm Sumit, from Bhopal(Madhya Pradesh).Currently,I am passionately pursuing my Master of Technology degree.
                             I am a fresher, eager to embark on a journey of exploration and innovation in the dynamic world of technology.
@@ -203,7 +216,7 @@
             <div class="row g-3">
                 <div class="col-md-12">
                     <div class="m-md-5">
-                        <h1 class="heading" align="center">SKILLS</h1>
+                        <h2 class="heading" align="center">SKILLS</h2>
                         <p class="paragraph p-2">
                             Welcome to my web portfolio!
                             I am excited to showcase my skills and knowledge. Proficient in HTML and CSS,
@@ -218,7 +231,7 @@
                 </div>
                 <div class="col-md-12 mt-1">
                 <div class="container-fluid">
-                    <div class="row row-cols-4 row-cols-md-4 g-2 m-2">
+                    <div class="row row-cols-4 row-cols-md-4 g-1 m-2">
                         <div class="col-md">
                             <img src="html.png" class="icons" alt="...">
                             <h6 class="icon-title" align="center">HTML</h6>
@@ -264,7 +277,7 @@
             <div class="row g-3">
                 <div class="col-md-12">
                     <div class="m-md-5">
-                        <h1 class="heading" align="center">QUALIFICATIONS</h1>
+                        <h2 class="heading" align="center">QUALIFICATIONS</h2>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -292,9 +305,9 @@
                         <div class="card p-2">
                             <img src="schl.jpg" class="card-img-top" alt="...">
                             <div class="card-body p-1 mt-1">
-                                <h6 class="card-title">St.Mary's Higher Secondary School</h6>
-                                <p class="card-text">Board : Madhya Pradesh Board</p>
-                                <p class="card-text">12th(higher secondary school) in Physics,Chemistry,Maths</p>
+                                <h6 class="card-title">St.Mary's higher secondary school</h6>
+                                <p class="card-text">Board : Madhya pradesh board</p>
+                                <p class="card-text">12th(higher secondary school) in physics,chemistry,maths</p>
                                 <p class="card-text">City : Jabalpur(M.P)</p>
                                 <p class="card-text">Year : 2014</p>
                             </div>
@@ -302,8 +315,8 @@
                         <div class="card p-2">
                             <img src="schl.jpg" class="card-img-top" alt="...">
                             <div class="card-body p-1 mt-1">
-                                <h6 class="card-title">St.Mary's Higher Secondary School</h6>
-                                <p class="card-text">Board : Madhya Pradesh Board</p>
+                                <h6 class="card-title">St.Mary's higher secondary school</h6>
+                                <p class="card-text">Board : Madhya pradesh board</p>
                                 <p class="card-text">10th(high school) in all general subjects</p>
                                 <p class="card-text">City : Jabalpur(M.P)</p>
                                 <p class="card-text">Year : 2012</p>
@@ -319,20 +332,20 @@
     <div class="container-fluid">
         <div class="footer">
             <div class="row g-2 mt-2 mb-2 p-3">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <img src="linkedin.png" class="footer-icons mx-2" alt="..."><a href="https://www.linkedin.com/in/sumit-soni-4467aa187" target="_blank" class="link p-0">LinkedIn</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <img src="gmail.png" class="footer-icons mx-2" alt="..."><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="link p-0">Gmail</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <img src="git.png" class="footer-icons mx-2" alt="..."><a href="https://github.com/sumit1014" class="link p-0">Github</a>
                 </div>
                 <div class="col-md-2">
                     <img src="HR.png" class="footer-icons mx-2" alt="..."><a href="https://www.hackerrank.com/sumit1001" class="link p-0">HackerRank</a>
                 </div>
-                <div class="col-md-3">
-                    <img src="call.png" class="footer-icons mx-2" alt="..."><a class="link p-0" disabled>+91-8085911694</a>
+                <div class="col-md-2">
+                    <img src="call.png" class="footer-icons mx-2" alt="..."><a class="link p-0">+91-8085911694</a>
                 </div>
             </div>
         </div>
